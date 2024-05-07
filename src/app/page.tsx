@@ -13,8 +13,10 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image';
+import Icon from '@mui/material/Icon';
+import { Carousel } from 'react-responsive-carousel';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Home', 'About', 'Services', 'Works', 'Blog', 'Contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 export default function Home() {
@@ -57,7 +59,7 @@ export default function Home() {
                 textDecoration: 'none',
               }}
             >
-              LOGO
+              Trinity
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -127,40 +129,78 @@ export default function Home() {
               ))}
             </Box>
 
-            <Box sx={{ flexGrow: 0 }}>
-              <Tooltip title="Open settings">
-                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+            <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'flex' }, alignItems: 'center', justifyContent: 'center' }}>
+              <div className='flex items-center justify-center'>
+                <IconButton className='bg-slate-400' color='error' size="large">
+                  <Icon>call</Icon>
                 </IconButton>
-              </Tooltip>
-              <Menu
-                sx={{ mt: '45px' }}
-                id="menu-appbar"
-                anchorEl={anchorElUser}
-                anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                open={Boolean(anchorElUser)}
-                onClose={handleCloseUserMenu}
-              >
-                {settings.map((setting) => (
-                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                    <Typography textAlign="center">{setting}</Typography>
-                  </MenuItem>
-                ))}
-              </Menu>
+                <div>
+                  <span>Call us anytime</span>
+                  <h4>+1 111 111 111</h4>
+                </div>
+              </div>
+              <div className='w-[1px] h-[30px] bg-slate-400 mx-2' />
+              <Button color='error' startIcon={<Icon>arrow_forward</Icon>} variant="contained">FREE ESTIMATE</Button>
             </Box>
           </Toolbar>
         </Container>
       </AppBar>
       <div>
-        <Image src="../images/cover.jpg" alt="" />
+        <section>
+          <Carousel showArrows={false} showThumbs={false} showStatus={false} showIndicators={false} autoPlay={true}> 
+              <div> 
+                  <img  src="/images/cover.jpg" alt="image1"/> 
+                  <div className='absolute top-0 h-full w-full flex items-center justify-center'>
+                    <div>
+                      <h2>Hello world</h2>
+                    </div>
+                  </div> 
+              </div> 
+              <div> 
+                  <img  src="/images/cover.jpg" alt="image2" /> 
+                  <div className='absolute top-0 h-full w-full flex items-center justify-center'>
+                    <div>
+                      <h2>Hello world</h2>
+                    </div>
+                  </div> 
+              </div> 
+              <div> 
+                  <img  src="/images/cover.jpg"alt="image3"/> 
+                  <div className='absolute top-0 h-full w-full flex items-center justify-center'>
+                    <div>
+                      <h2>Hello world</h2>
+                    </div>
+                  </div> 
+              </div> 
+              <div> 
+                  <img  src="/images/cover.jpg" alt="image4"/> 
+                  <div className='absolute top-0 h-full w-full flex items-center justify-center'>
+                    <div>
+                      <h2>Hello world</h2>
+                    </div>
+                  </div> 
+              </div> 
+              <div> 
+                  <img  src="/images/cover.jpg" alt="image5"/> 
+                  <div className='absolute top-0 h-full w-full flex items-center justify-center'>
+                    <div>
+                      <h2>Hello world</h2>
+                    </div>
+                  </div> 
+              </div> 
+          </Carousel> 
+        </section>
+        <section className='relative flex space-x-28 justify-center items-center'>
+            <article className='h-72 w-72 bg-gray-950 border-t-red-600 border-t-8'>
+
+            </article>
+            <article className='h-72 w-72 bg-gray-950 border-t-red-600 border-t-8'>
+
+            </article>
+            <article className='h-72 w-72 bg-gray-950 border-t-red-600 border-t-8'>
+
+            </article>
+        </section>
       </div>
     </main>
   );
