@@ -15,6 +15,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image';
 import Icon from '@mui/material/Icon';
 import { Carousel } from 'react-responsive-carousel';
+import { Card, CardActions, CardContent, CardMedia } from '@mui/material';
 
 const pages = ['Home', 'About', 'Services', 'Works', 'Blog', 'Contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -145,7 +146,7 @@ export default function Home() {
           </Toolbar>
         </Container>
       </AppBar>
-      <div>
+      <div className='pb-80'>
         <section>
           <Carousel showArrows={false} showThumbs={false} showStatus={false} showIndicators={false} autoPlay={true}> 
               <div> 
@@ -190,16 +191,138 @@ export default function Home() {
               </div> 
           </Carousel> 
         </section>
-        <section className='relative flex space-x-28 justify-center items-center'>
-            <article className='h-72 w-72 bg-gray-950 border-t-red-600 border-t-8'>
+        <section className='relative flex space-x-28 justify-center items-center px-44'>
+            <article className='h-72 flex-1 bg-gray-950 border-t-red-600 border-t-8'>
 
             </article>
-            <article className='h-72 w-72 bg-gray-950 border-t-red-600 border-t-8'>
+            <article className='h-72 flex-1 bg-gray-950 border-t-red-600 border-t-8'>
 
             </article>
-            <article className='h-72 w-72 bg-gray-950 border-t-red-600 border-t-8'>
+            <article className='h-72 flex-1 bg-gray-950 border-t-red-600 border-t-8'>
 
             </article>
+        </section>
+        <section className='flex px-44 mt-12'>
+          <div className='flex-1 p-5'>
+            <div className='bg-slate-200 w-full h-full'></div>
+          </div>
+          <div className='flex-1 flex flex-col space-y-6'>
+              <div>
+                <span>About roofside</span>
+                <h3>Experienced & quality roofing service providers</h3>
+              </div>
+              <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat praesentium nesciunt dolore explicabo delectus dolores ea vero, alias, sequi unde dolorum illo est enim officia repudiandae eos? Tenetur, optio.</p>
+              </div>
+              <div className='flex space-x-5'>
+                <div className='flex-1'>
+                  <div>
+                    <h6>Innovative work</h6>
+                  </div>
+                  <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, blanditiis rem necessitatibus nemo sed unde adipisci eaque cupiditate porro maxime tempore optio, voluptas ea quas accusamus eligendi! Voluptatum, quis dolore!</p>
+                  </div>
+                </div>
+                <div className='flex-1'>
+                  <div>
+                    <h6>Innovative work</h6>
+                  </div>
+                  <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, blanditiis rem necessitatibus nemo sed unde adipisci eaque cupiditate porro maxime tempore optio, voluptas ea quas accusamus eligendi! Voluptatum, quis dolore!</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <Button color='error' startIcon={<Icon>arrow_forward</Icon>} variant="contained">FREE ESTIMATE</Button>
+              </div>
+          </div>
+        </section>
+        <section className='flex mt-12 flex-col px-44'>
+          <div>
+            <h3>Our Services</h3>
+            <div className='flex space-x-5'>
+              <h2>We`re providing quality roofing services</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat porro rem, sint animi a eos in repudiandae tempore obcaecati voluptatum qui id inventore sit, nihil dolorem, possimus laborum voluptate aut!</p>
+            </div>
+          </div>
+          <div className='flex space-x-5'>
+            <Card sx={{ maxWidth: 345 }}>
+              <CardMedia
+                sx={{ height: 140 }}
+                image="/static/images/cards/contemplative-reptile.jpg"
+                title="green iguana"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Lizard
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Lizards are a widespread group of squamate reptiles, with over 6,000
+                  species, ranging across all continents except Antarctica
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
+            </Card>
+            <Card sx={{ maxWidth: 345 }}>
+              <CardMedia
+                sx={{ height: 140 }}
+                image="/static/images/cards/contemplative-reptile.jpg"
+                title="green iguana"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Lizard
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Lizards are a widespread group of squamate reptiles, with over 6,000
+                  species, ranging across all continents except Antarctica
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
+            </Card>
+            <Card sx={{ maxWidth: 345 }}>
+              <CardMedia
+                sx={{ height: 140 }}
+                image="/static/images/cards/contemplative-reptile.jpg"
+                title="green iguana"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Lizard
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Lizards are a widespread group of squamate reptiles, with over 6,000
+                  species, ranging across all continents except Antarctica
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
+            </Card>
+          </div>
+        </section>
+        <section className='flex flex-col px-44 mt-12'>
+          <div className='flex-1'>
+            <h3>Why choose us</h3>
+            <h2>Few reasons to choose our company</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis dolor dicta fugiat iste consequatur voluptatem eos quas odio non perspiciatis eum ullam est pariatur, dolores optio. Sit temporibus dicta iure.</p>
+            <div className="grid grid-cols-2 grid-rows-2 gap-4">
+              <div className="bg-blue-500 text-white p-4">1</div>
+              <div className="bg-green-500 text-white p-4">2</div>
+              <div className="bg-purple-500 text-white p-4">3</div>
+              <div className="bg-yellow-500 text-white p-4">4</div>
+            </div>
+          </div>
+          <div className='flex-1 p-5'>
+            <div className='bg-slate-200 w-full h-full'></div>
+          </div>
         </section>
       </div>
     </main>
