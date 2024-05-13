@@ -782,7 +782,7 @@ export default function Home() {
       </div>
 
 
-      <footer className="site-footer">
+      <footer className="!px-44 site-footer">
             <div className="site-footer-img-1">
                 <img src="/images/site-footer-img-1.png" alt="" />
             </div>
