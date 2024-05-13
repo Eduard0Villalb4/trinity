@@ -433,7 +433,7 @@ export default function Home() {
                                     <div className="section-sub-title-box">
                                         <p className="section-sub-title">Our services</p>
                                         <div className="section-title-shape-1">
-                                            <img src="assets/images/shapes/section-title-shape-1.png" alt="" />
+                                            <img src="/images/section-title-shape-1.png" alt="" />
                                         </div>
                                     </div>
                                     <h2 className="section-title__title">We’re providing quality roofing services</h2>
