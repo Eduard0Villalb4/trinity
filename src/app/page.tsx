@@ -441,21 +441,90 @@ export default function Home() {
             </Card>
           </div>
         </section>
-        <section className='flex px-44 mt-12'>
-          <div className='flex-1 w-full'>
-            <h3 className='sub-title'>Why choose us</h3>
-            <h2 className='title'>Few reasons to choose our company</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis dolor dicta fugiat iste consequatur voluptatem eos quas odio non perspiciatis eum ullam est pariatur, dolores optio. Sit temporibus dicta iure.</p>
-            <div className="grid grid-cols-2 grid-rows-2 gap-4">
-              <div className="bg-blue-500 text-white p-4">1</div>
-              <div className="bg-green-500 text-white p-4">2</div>
-              <div className="bg-purple-500 text-white p-4">3</div>
-              <div className="bg-yellow-500 text-white p-4">4</div>
+
+
+        <section className="why-choose-one">
+            <div className="why-choose-one-bg" style={{ backgroundImage: "url(/images//why-choose-one-bg.jpg)" }}></div>
+            <div className="why-choose-one-shape-3 float-bob-y-2"></div>
+            <div className="why-choose-one-shape-4 float-bob-x">
+                <img src="/images/why-choose-one-shape-4.png" alt="" />
             </div>
-          </div>
-          <div className='flex-1 p-5 w-full'>
-            <div className='bg-slate-200 w-full h-full min-h-96'></div>
-          </div>
+            <div className="container">
+                <div className="flex">
+                    <div className="flex-1">
+                        <div className="why-choose-one__left">
+                            <div className="section-title text-left">
+                                <div className="section-sub-title-box">
+                                    <p className="section-sub-title">Why choose us</p>
+                                    <div className="section-title-shape-1">
+                                        <img src="/images/section-title-shape-1.png" alt="" />
+                                    </div>
+                                </div>
+                                <h2 className="section-title__title">Few reasons to choose our company</h2>
+                            </div>
+                            <p className="why-choose-one__text">Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute aboris nisi ut aliquip ex irure reprehederit.</p>
+                            <div className="why-choose-one__points-box">
+                                <div className="row">
+                                    <div className="col-xl-6 col-lg-6 col-md-6">
+                                        <div className="why-choose-one__points-single">
+                                            <div className="why-choose-one__points-icon">
+                                                <span className="icon-roof-2"></span>
+                                            </div>
+                                            <div className="why-choose-one__points-title-box">
+                                                <h4 className="why-choose-one__points-title">Quality <br /> materials</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-6 col-lg-6 col-md-6">
+                                        <div className="why-choose-one__points-single">
+                                            <div className="why-choose-one__points-icon">
+                                                <span className="icon-shield"></span>
+                                            </div>
+                                            <div className="why-choose-one__points-title-box">
+                                                <h4 className="why-choose-one__points-title">Fully <br /> insured</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-6 col-lg-6 col-md-6">
+                                        <div className="why-choose-one__points-single">
+                                            <div className="why-choose-one__points-icon">
+                                                <span className="icon-mission"></span>
+                                            </div>
+                                            <div className="why-choose-one__points-title-box">
+                                                <h4 className="why-choose-one__points-title">Mission <br /> statement</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-6 col-lg-6 col-md-6">
+                                        <div className="why-choose-one__points-single">
+                                            <div className="why-choose-one__points-icon">
+                                                <span className="icon-construction-worker"></span>
+                                            </div>
+                                            <div className="why-choose-one__points-title-box">
+                                                <h4 className="why-choose-one__points-title">Expert <br /> engineers</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex-1">
+                        <div className="why-choose-one__right">
+                            <div className="why-choose-one__img-box">
+                                <div className="why-choose-one__img wow slideInRight animated" data-wow-delay="100ms" data-wow-duration="2500ms" style={{ visibility: "visible", animationDuration: "2500ms", animationDelay: "100ms", animationName: "slideInRight" }}>
+                                    <img src="/images/why-choose-one-img-1.png" alt="" />
+                                </div>
+                                <div className="why-choose-one__shape-1"></div>
+                                <div className="why-choose-one__shape-2"></div>
+                                <div className="why-choose-one__author-sign">
+                                    <p>Kevin Martin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section className='flex px-44 mt-12'>
@@ -539,7 +608,7 @@ export default function Home() {
               <div className="grid grid-cols-1 lg:grid-cols-2">
                   <div className="trust-company__left lg:col-span-6">
                       <div className="trust-company__video-link">
-                          <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" className="video-popup">
+                          <a href="" className="video-popup">
                               <div className="trust-company__video-icon">
                                   <Icon>play_arrow</Icon>
                                   <i className="ripple"></i>
