@@ -388,7 +388,7 @@ export default function Home() {
                                     </div>
                                 </li>
                             </ul>
-                            <Button color='error' startIcon={<Icon>arrow_forward</Icon>} variant="contained">FREE ESTIMATE</Button>
+                            <a href="about.html" className="thm-btn about-one__btn"> <i className="fa fa-arrow-right"></i> Discover more</a>
                         </div>
                     </div>
                 </div>
