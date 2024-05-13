@@ -517,12 +517,12 @@ export default function Home() {
                         <div className="why-choose-one__right">
                             <div className="why-choose-one__img-box">
                                 <div className="why-choose-one__img wow slideInRight animated" data-wow-delay="100ms" data-wow-duration="2500ms" style={{ visibility: "visible", animationDuration: "2500ms", animationDelay: "100ms", animationName: "slideInRight" }}>
-                                    <img src="/images/why-choose-one-img-1.png" alt="" />
+                                    <img src="https://images.squarespace-cdn.com/content/v1/5bbe5a87b2cf79f2c6fd8d54/1546539376605-PL9L9MHJEK43YKB26YYO/contracto4.png" alt="" />
                                 </div>
                                 <div className="why-choose-one__shape-1"></div>
                                 <div className="why-choose-one__shape-2"></div>
                                 <div className="why-choose-one__author-sign">
-                                    <p>Gabino Espinoza</p>
+                                    <p className='font-extrabold'>Gabino Espinoza</p>
                                 </div>
                             </div>
                         </div>
