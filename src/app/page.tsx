@@ -247,7 +247,7 @@ export default function Home() {
             <div className="px-44">
                 <div className="feature-one__inner">
                     <div className="feature-one__dot">
-                        <img src="assets/images/shapes/feature-one-dot.png" alt="" />
+                        <img src="/images/feature-one-dot.png" alt="" />
                     </div>
                     <div className="row flex space-x-3">
                         <div className="flex-1 col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay="100ms" style={{visibility: "visible", animationDelay: "100ms", animationName: "fadeInUp"}}>
@@ -500,7 +500,7 @@ export default function Home() {
 
         <section className="!px-44 mt-12 trust-company">
           <div className="trust-company-shape-1">
-              <img src="/images/shapes/traust-company-shape-1.png" alt="" />
+              <img src="/images/traust-company-shape-1.png" alt="" />
           </div>
           <div className="trust-company-shape-2"></div>
           <div className="trust-company-shape-3"></div>
@@ -555,9 +555,139 @@ export default function Home() {
           </div>
         </section>
 
+        <section className='flex mt-12 flex-col px-44'>
+          <div>
+            <h3 className='sub-title'>testimonials</h3>
+            <div className='flex space-x-5'>
+              <h2 className='tite'>What they’re talking about us</h2>
+            </div>
+          </div>
+        </section>
 
+
+        <section className='flex flex-col px-44 mt-12'>
+          <div className='flex flex-col w-full'>
+            <div className='w-full text-center'>
+              <h3 className='sub-title'>News & Updates</h3>
+              <h2 className='title'>Stay update with roofsie <br /> news & articles</h2>
+            </div>
+          </div>
+          <div className='w-full h-72'>
+            <Carousel 
+              className='w-full h-full'
+              responsive={responsiveSecondCarousel} 
+              infinite={true}
+              swipeable={true}
+              ssr={true} // means to render carousel on server-side.
+              autoPlay={true}
+              autoPlaySpeed={1000}
+              keyBoardControl={true}
+              customTransition="all .5"
+              transitionDuration={500}
+            >
+              <div className='min-w-11 w-full p-2'>
+                <img src="/images/residential-roofing-700x400.jpg" alt="" />
+              </div>
+              <div className='min-w-11 w-full p-2'>
+                <img src="/images/residential-roofing-700x400.jpg" alt="" />
+              </div>
+              <div className='min-w-11 w-full p-2'>
+                <img src="/images/residential-roofing-700x400.jpg" alt="" />
+              </div>
+              <div className='min-w-11 w-full p-2'>
+                <img src="/images/residential-roofing-700x400.jpg" alt="" />
+              </div>
+            </Carousel>
+          </div>
+        </section>
         
       </div>
+
+
+      <footer className="site-footer">
+            <div className="site-footer-img-1">
+                <img src="/images/site-footer-img-1.png" alt="" />
+            </div>
+            <div className="site-footer-shape-1">
+                <img src="/images/site-footer-shape-1.png" alt="" />
+            </div>
+            <div className="container">
+                <div className="site-footer__top">
+                    <div className="row">
+                        <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp animated" data-wow-delay="100ms" style={{ visibility: "visible", animationDelay: "100ms", animationName: "fadeInUp"}}>
+                            <div className="footer-widget__column footer-widget__about">
+                                <div className="footer-widget__about-text-box">
+                                    <p className="footer-widget__about-text">Roofsie with more than two years of proven success in quality roofing services.</p>
+                                </div>
+                                <div className="site-footer__social">
+                                    <a href="#"><i className="fab fa-twitter"></i></a>
+                                    <a href="#"><i className="fab fa-facebook"></i></a>
+                                    <a href="#"><i className="fab fa-pinterest-p"></i></a>
+                                    <a href="#"><i className="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp animated" data-wow-delay="200ms" style={{ visibility: "visible", animationDelay: "200ms", animationName: "fadeInUp"}}>
+                            <div className="footer-widget__column footer-widget__explore clearfix">
+                                <h3 className="footer-widget__title">Explore</h3>
+                                <ul className="footer-widget__explore-list list-unstyled clearfix">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="work.html">Recent Works</a></li>
+                                    <li><a href="team.html">Our Team</a></li>
+                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp animated" data-wow-delay="300ms" style={{ visibility: "visible", animationDelay: "300ms", animationName: "fadeInUp"}}>
+                            <div className="footer-widget__column footer-widget__newsletter clearfix">
+                                <h3 className="footer-widget__title">Newsletter</h3>
+                                <p className="footer-widget__newsletter-text">Subscribe to our newsletter and get update in your inbox.</p>
+                                <form className="footer-widget__newsletter-form">
+                                    <div className="footer-widget__newsletter-input-box">
+                                        <input type="email" placeholder="Enter Email Address" name="email" />
+                                        <Button color='error' startIcon={<Icon>arrow_forward</Icon>} variant="contained">Subscribe</Button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp animated" data-wow-delay="400ms" style={{ visibility: "visible", animationDelay: "400ms", animationName: "fadeInUp"}}>
+                            <div className="footer-widget__column footer-widget__contact">
+                                <h3 className="footer-widget__title">Contact</h3>
+                                <p className="footer-widget__contact-text">asdasdasd asd asdasd</p>
+                                <ul className="list-unstyled footer-widget__contact-list">
+                                    <li>
+                                        <div className="icon">
+                                            <i className="fa fa-envelope"></i>
+                                        </div>
+                                        <div className="text">
+                                            <p><a href="mailto:needhelp@company.com ">trinity@company.com</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="icon">
+                                            <i className="fas fa-phone-alt"></i>
+                                        </div>
+                                        <div className="text">
+                                            <p><a href="tel:9200368090">+1 111 111 111</a></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="site-footer__bottom">
+                    <div className="row">
+                        <div className="col-xl-12">
+                            <div className="site-footer__bottom-inner">
+                                <p className="site-footer__bottom-text">© All Copyright 2024 by Trinity inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
   );
 }
