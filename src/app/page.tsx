@@ -442,63 +442,65 @@ export default function Home() {
         </section>
 
 
-        <section className="trust-company">
-    <div className="trust-company-shape-1">
-        <img src="/images/shapes/traust-company-shape-1.png" alt="" />
-    </div>
-    <div className="trust-company-shape-2"></div>
-    <div className="trust-company-shape-3"></div>
-    <div className="trust-company-shape-4"></div>
-    <div className="trust-company-bg jarallax" data-jarallax="" data-speed="0.2" data-imgposition="50% 0%" style={{ backgroundImage: "none"}} data-jarallax-original-styles="background-image: url(assets/images/backgrounds/trust-company-bg.jpg);">
-        <div style={{ position: "absolute", top: "0px", left: "0px", width: "100%", height: "100%", overflow: "hidden", zIndex: "-100"}} id="jarallax-container-0">
-            <div style={{ backgroundPosition: "50% 50%", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundImage: "url(&quot;https://roofsie-html.vercel.app/main-html/assets/images/backgrounds/trust-company-bg.jpg&quot;)", position: "fixed", top: "0px", left: "0px", width: "1392px", height: "873px", overflow: "hidden", pointerEvents: "none", transformStyle: "preserve-3d", backfaceVisibility: "hidden", willChange: "transform, opacity", marginTop: "47.5px", transform: "translate3d(0px, -20.7px, 0px)" }}></div>
-        </div>
-    </div>
-    <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-2">
-            <div className="trust-company__left lg:col-span-6">
-                <div className="trust-company__video-link">
-                    <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" className="video-popup">
-                        <div className="trust-company__video-icon">
-                            <span className="fa fa-play"></span>
-                            <i className="ripple"></i>
-                        </div>
-                    </a>
-                </div>
-                <h2 className="trust-company__title">Hundreds of customers trust our company</h2>
-            </div>
-            <div className="trust-company__right lg:col-span-5">
-                <ul className="list-none">
-                    <li className="flex items-center">
-                        <div className="icon">
-                            <span className="icon-tick"></span>
-                        </div>
-                        <div className="text">
-                            <p>We’ve expert & certified staff</p>
-                        </div>
-                    </li>
-                    <li className="flex items-center">
-                        <div className="icon">
-                            <span className="icon-tick"></span>
-                        </div>
-                        <div className="text">
-                            <p>We only provide quality services</p>
-                        </div>
-                    </li>
-                    <li className="flex items-center">
-                        <div className="icon">
-                            <span className="icon-tick"></span>
-                        </div>
-                        <div className="text">
-                            <p>We offer you free estimates</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+        <section className="!px-44 mt-12 trust-company">
+          <div className="trust-company-shape-1">
+              <img src="/images/shapes/traust-company-shape-1.png" alt="" />
+          </div>
+          <div className="trust-company-shape-2"></div>
+          <div className="trust-company-shape-3"></div>
+          <div className="trust-company-shape-4"></div>
+          <div className="trust-company-bg jarallax" data-jarallax="" data-speed="0.2" data-imgposition="50% 0%" style={{ backgroundImage: "none"}} data-jarallax-original-styles="background-image: url(assets/images/backgrounds/trust-company-bg.jpg);">
+              <div style={{ position: "absolute", top: "0px", left: "11rem", width: "100%", height: "100%", overflow: "hidden", zIndex: "-100"}} id="jarallax-container-0">
+                  <div style={{ backgroundPosition: "50% 50%", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundImage: "url(&quot;https://roofsie-html.vercel.app/main-html/assets/images/backgrounds/trust-company-bg.jpg&quot;)", position: "fixed", top: "0px", left: "0px", width: "1392px", height: "873px", overflow: "hidden", pointerEvents: "none", transformStyle: "preserve-3d", backfaceVisibility: "hidden", willChange: "transform, opacity", marginTop: "47.5px", transform: "translate3d(0px, -20.7px, 0px)" }}></div>
+              </div>
+          </div>
+          <div className="container">
+              <div className="grid grid-cols-1 lg:grid-cols-2">
+                  <div className="trust-company__left lg:col-span-6">
+                      <div className="trust-company__video-link">
+                          <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" className="video-popup">
+                              <div className="trust-company__video-icon">
+                                  <Icon>play_arrow</Icon>
+                                  <i className="ripple"></i>
+                              </div>
+                          </a>
+                      </div>
+                      <h2 className="trust-company__title">Hundreds of customers trust our company</h2>
+                  </div>
+                  <div className="trust-company__right lg:col-span-5">
+                      <ul className="list-none">
+                          <li className="flex items-center">
+                              <div className="icon">
+                                  <span className="icon-tick"></span>
+                              </div>
+                              <div className="text">
+                                  <p>We’ve expert & certified staff</p>
+                              </div>
+                          </li>
+                          <li className="flex items-center">
+                              <div className="icon">
+                                  <span className="icon-tick"></span>
+                              </div>
+                              <div className="text">
+                                  <p>We only provide quality services</p>
+                              </div>
+                          </li>
+                          <li className="flex items-center">
+                              <div className="icon">
+                                  <span className="icon-tick"></span>
+                              </div>
+                              <div className="text">
+                                  <p>We offer you free estimates</p>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        </section>
 
+
+        
       </div>
     </main>
   );
