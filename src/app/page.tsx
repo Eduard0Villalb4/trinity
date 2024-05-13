@@ -243,16 +243,72 @@ export default function Home() {
               </div> 
           </Carousel> 
         </section>
-        <section className='relative flex space-x-28 justify-center items-center px-44'>
-            <article className='h-72 flex-1 bg-gray-950 border-t-red-600 border-t-8'>
-
-            </article>
-            <article className='h-72 flex-1 bg-gray-950 border-t-red-600 border-t-8'>
-
-            </article>
-            <article className='h-72 flex-1 bg-gray-950 border-t-red-600 border-t-8'>
-
-            </article>
+        <section className="feature-one">
+            <div className="px-44">
+                <div className="feature-one__inner">
+                    <div className="feature-one__dot">
+                        <img src="assets/images/shapes/feature-one-dot.png" alt="" />
+                    </div>
+                    <div className="row flex space-x-3">
+                        <div className="flex-1 col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay="100ms" style={{visibility: "visible", animationDelay: "100ms", animationName: "fadeInUp"}}>
+                            <div className="feature-one__single !bg-[#121113]">
+                                <div className="feature-one__top">
+                                    <div className="feature-one__icon">
+                                        <span className="icon-roof-5"></span>
+                                    </div>
+                                    <div className="feature-one__title-box">
+                                        <h3 className="feature-one__title !text-white"><a className='!text-white' href="about.html">Quality <br /> materials</a></h3>
+                                    </div>
+                                </div>
+                                <div className="feature-one__single-inner">
+                                    <p className="feature-one__text">Nullam neque augue, maximus id nulla id, dignissim tristique nunc.</p>
+                                    <div className="feature-one__read-more">
+                                        <a className='!text-white' href="about.html">Read More <i className="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+          
+                        <div className="flex-1 col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay="200ms" style={{ visibility: "visible", animationDelay: "200ms", animationName: "fadeInUp"}}>
+                            <div className="feature-one__single !bg-[#121113]">
+                                <div className="feature-one__top">
+                                    <div className="feature-one__icon">
+                                        <span className="icon-construction-worker"></span>
+                                    </div>
+                                    <div className="feature-one__title-box">
+                                        <h3 className="feature-one__title !text-white"><a className='!text-white' href="team.html">Professional <br /> workers</a></h3>
+                                    </div>
+                                </div>
+                                <div className="feature-one__single-inner">
+                                    <p className="feature-one__text">Nullam neque augue, maximus id nulla id, dignissim tristique nunc.</p>
+                                    <div className="feature-one__read-more">
+                                        <a className='!text-white' href="team-details.html">Read More <i className="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+   
+                        <div className="flex-1 col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay="300ms" style={{ visibility: "visible", animationDelay: "300ms", animationName: "fadeInUp" }}>
+                            <div className="feature-one__single !bg-[#121113]">
+                                <div className="feature-one__top">
+                                    <div className="feature-one__icon">
+                                        <span className="icon-online-registration"></span>
+                                    </div>
+                                    <div className="feature-one__title-box">
+                                        <h3 className="feature-one__title !text-white"><a className='!text-white' href="contact.html">Free <br /> estimates</a></h3>
+                                    </div>
+                                </div>
+                                <div className="feature-one__single-inner">
+                                    <p className="feature-one__text">Nullam neque augue, maximus id nulla id, dignissim tristique nunc.</p>
+                                    <div className="feature-one__read-more">
+                                        <a className='!text-white' href="contact.html">Read More <i className="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section className='flex px-44 mt-12'>
           <div className='flex-1 p-5'>
