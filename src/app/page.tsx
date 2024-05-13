@@ -370,76 +370,94 @@ export default function Home() {
               </div>
           </div>
         </section>
-        <section className='flex mt-12 flex-col px-44'>
-          <div>
-            <h3 className='sub-title'>Our Services</h3>
-            <div className='flex space-x-5'>
-              <h2 className='tite'>We`re providing quality roofing services</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat porro rem, sint animi a eos in repudiandae tempore obcaecati voluptatum qui id inventore sit, nihil dolorem, possimus laborum voluptate aut!</p>
+
+
+        <section className="!px-44 services-one">
+            <div className="services-one-shape-1 float-bob-x">
+                <img src="/images/services-one-shape-1.png" alt="" />
             </div>
-          </div>
-          <div className='flex space-x-5'>
-            <Card sx={{ maxWidth: 345 }}>
-              <CardMedia
-                sx={{ height: 140 }}
-                image="/images/residential-roofing-700x400.jpg"
-                title="green iguana"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Lizard
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000
-                  species, ranging across all continents except Antarctica
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
-              </CardActions>
-            </Card>
-            <Card sx={{ maxWidth: 345 }}>
-              <CardMedia
-                sx={{ height: 140 }}
-                image="/images/residential-roofing-700x400.jpg"
-                title="green iguana"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Lizard
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000
-                  species, ranging across all continents except Antarctica
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
-              </CardActions>
-            </Card>
-            <Card sx={{ maxWidth: 345 }}>
-              <CardMedia
-                sx={{ height: 140 }}
-                image="/images/residential-roofing-700x400.jpg"
-                title="green iguana"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Lizard
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000
-                  species, ranging across all continents except Antarctica
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
-              </CardActions>
-            </Card>
-          </div>
+            <div className="services-one-shape-2">
+                <img src="/images/services-one-shape-2.png" alt="" />
+            </div>
+            <div className="container">
+                <div className="services-one__top">
+                    <div className="flex">
+                        <div className="col-xl-7 col-lg-6">
+                            <div className="services-one__top-left">
+                                <div className="section-title text-left">
+                                    <div className="section-sub-title-box">
+                                        <p className="section-sub-title">Our services</p>
+                                        <div className="section-title-shape-1">
+                                            <img src="assets/images/shapes/section-title-shape-1.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <h2 className="section-title__title">We’re providing quality roofing services</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-5 col-lg-6">
+                            <div className="services-one__top-right">
+                                <p className="services-one__top-right-text">Nulla commodo dolor massa, vel pellentesque nulla congue quis. Fusce ut convallis diam. Nam id tortor et nunc tempor faucibus. Sed eu leo egestas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="services-one__bottom !mt-32">
+                    <div className="flex space-x-4">
+                        <div className="flex-1 wow fadeInUp animated" data-wow-delay="100ms" style={{ visibility: "visible", animationDelay: "100ms", animationName: "fadeInUp"}}>
+                            <div className="services-one__single">
+                                <div className="services-one__img">
+                                    <img src="assets/images/services/services-1-1.jpg" alt="" />
+                                </div>
+                                <div className="services-one__content">
+                                    <div className="services-one__icon">
+                                        <span className="icon-roof"></span>
+                                    </div>
+                                    <h3 className="services-one__title"><a href="single-play-roofing.html">Single play roofing</a></h3>
+                                    <p className="services-one__text">Nulla commodo dolor massa, vel pellen esque nulla congue quis.</p>
+                                    <div className="services-one__read-more">
+                                        <a href="single-play-roofing.html">Read More <i className="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex-1 wow fadeInUp animated" data-wow-delay="200ms" style={{ visibility: "visible", animationDelay: "200ms", animationName: "fadeInUp"}}>
+                            <div className="services-one__single">
+                                <div className="services-one__img">
+                                    <img src="assets/images/services/services-1-2.jpg" alt="" />
+                                </div>
+                                <div className="services-one__content">
+                                    <div className="services-one__icon">
+                                        <span className="icon-joist"></span>
+                                    </div>
+                                    <h3 className="services-one__title"><a href="modified-roofing.html">Modified roofing</a></h3>
+                                    <p className="services-one__text">Nulla commodo dolor massa, vel pellen esque nulla congue quis.</p>
+                                    <div className="services-one__read-more">
+                                        <a href="modified-roofing.html">Read More <i className="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex-1 wow fadeInUp animated" data-wow-delay="300ms" style={{ visibility: "visible", animationDelay: "300ms", animationName: "fadeInUp"}}>
+                            <div className="services-one__single">
+                                <div className="services-one__img">
+                                    <img src="assets/images/services/services-1-3.jpg" alt="" />
+                                </div>
+                                <div className="services-one__content">
+                                    <div className="services-one__icon">
+                                        <span className="icon-roof-1"></span>
+                                    </div>
+                                    <h3 className="services-one__title"><a href="built-up-roofing.html">Built-up roofing</a></h3>
+                                    <p className="services-one__text">Nulla commodo dolor massa, vel pellen esque nulla congue quis.</p>
+                                    <div className="services-one__read-more">
+                                        <a href="built-up-roofing.html">Read More <i className="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
