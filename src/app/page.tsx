@@ -448,7 +448,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="services-one__bottom !mt-32">
-                    <div className="flex space-x-4">
+                    <div className="flex space-x-4 w-full justify-center items-center">
                         <div className="flex-1 wow fadeInUp animated" data-wow-delay="100ms" style={{ visibility: "visible", animationDelay: "100ms", animationName: "fadeInUp"}}>
                             <div className="services-one__single">
                                 <div className="services-one__img">
@@ -462,6 +462,23 @@ export default function Home() {
                                     <p className="services-one__text">Nulla commodo dolor massa, vel pellen esque nulla congue quis.</p>
                                     <div className="services-one__read-more">
                                         <a href="single-play-roofing.html">Read More <i className="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex-1 wow fadeInUp animated" data-wow-delay="200ms" style={{ visibility: "visible", animationDelay: "200ms", animationName: "fadeInUp"}}>
+                            <div className="services-one__single">
+                                <div className="services-one__img">
+                                    <img src="/images/services-1-2.jpg" alt="" />
+                                </div>
+                                <div className="services-one__content">
+                                    <div className="services-one__icon">
+                                        <span className="icon-joist"></span>
+                                    </div>
+                                    <h3 className="services-one__title"><a href="modified-roofing.html">Modified roofing</a></h3>
+                                    <p className="services-one__text">Nulla commodo dolor massa, vel pellen esque nulla congue quis.</p>
+                                    <div className="services-one__read-more">
+                                        <a href="modified-roofing.html">Read More <i className="fa fa-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
