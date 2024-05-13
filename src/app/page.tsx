@@ -335,40 +335,85 @@ export default function Home() {
                 </div>
             </div>
         </section>
-        <section className='flex px-44 mt-12'>
-          <div className='flex-1 p-5'>
-            <div className='bg-slate-200 w-full h-full'></div>
-          </div>
-          <div className='flex-1 flex flex-col space-y-6'>
-              <div>
-                <h3 className='sub-title'>About roofside</h3>
-                <h2 className='title'>Experienced & quality roofing service providers</h2>
-              </div>
-              <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat praesentium nesciunt dolore explicabo delectus dolores ea vero, alias, sequi unde dolorum illo est enim officia repudiandae eos? Tenetur, optio.</p>
-              </div>
-              <div className='flex space-x-5'>
-                <div className='flex-1'>
-                  <div>
-                    <h6>Innovative work</h6>
-                  </div>
-                  <div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, blanditiis rem necessitatibus nemo sed unde adipisci eaque cupiditate porro maxime tempore optio, voluptas ea quas accusamus eligendi! Voluptatum, quis dolore!</p>
-                  </div>
+
+<section className="!px-44 about-one">
+            <div className="about-one__shape float-bob-x">
+                <img src="/images/about-one-shape-dark.png" alt="" />
+            </div>
+            <div className="container">
+                <div className="flex">
+                    <div className="flex-1">
+                        <div className="about-one__left">
+                            <div className="about-one__img-box wow slideInLeft animated" data-wow-delay="100ms" data-wow-duration="2500ms" style={{ visibility: "visible", animationDuration: "2500ms", animationDelay: "100ms", animationName: "slideInLeft" }}>
+                                <div className="about-one__img">
+                                    <img src="/images/about-one-img-1.jpg" alt="" />
+                                </div>
+                                <div className="about-one__line">
+                                    <img src="/images/about-one-line-dark.png" alt="" />
+                                </div>
+                                <div className="about-one__satisfied">
+                                    <div className="about-one__satisfied-inner">
+                                        <div className="about-one__satisfied-shape">
+                                            <img src="/images/about-one-satisfied-shape-1-dark.png" alt="" />
+                                        </div>
+                                        <div className="about-one__satisfied-content">
+                                            <div className="about-one__satisfied-count-box">
+                                                <h3 className="odometer odometer-auto-theme" data-count="98"><div className="odometer-inside"><span className="odometer-digit"><span className="odometer-digit-spacer">8</span><span className="odometer-digit-inner"><span className="odometer-ribbon"><span className="odometer-ribbon-inner"><span className="odometer-value">9</span></span></span></span></span><span className="odometer-digit"><span className="odometer-digit-spacer">8</span><span className="odometer-digit-inner"><span className="odometer-ribbon"><span className="odometer-ribbon-inner"><span className="odometer-value">8</span></span></span></span></span></div></h3>
+                                                <span className="about-one__satisfied-percent">%</span>
+                                            </div>
+                                            <p className="about-one__satisfied-text">Satisfied customers</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="about-one__big-text">roofing</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex-1">
+                        <div className="about-one__right">
+                            <div className="section-title text-left">
+                                <div className="section-sub-title-box">
+                                    <p className="section-sub-title">About roofsie</p>
+                                    <div className="section-title-shape-1">
+                                        <img src="/images/section-title-shape-1.png" alt="" />
+                                    </div>
+                                </div>
+                                <h2 className="section-title__title">Experienced &amp; quality roofing services providers</h2>
+                            </div>
+                            <p className="about-one__text">Nulla commodo dolor massa, vel pellentesque nulla congue quis. Fusce ut convallis diam. Nam id tortor et nunc tempor faucibus. Sed eu leo egestas, imperdiet felis sed, vestibulum ligula.</p>
+                            <ul className="list-unstyled about-one__points">
+                                <li>
+                                    <div className="icon-box">
+                                        <div className="icon">
+                                            <span className="icon-confirmation"></span>
+                                        </div>
+                                        <div className="text-box">
+                                            <p>Innovative work</p>
+                                        </div>
+                                    </div>
+                                    <div className="text-box-two">
+                                        <p>Lorem ipsum dolor sit ame sedme consectetur nod.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="icon-box">
+                                        <div className="icon">
+                                            <span className="icon-confirmation"></span>
+                                        </div>
+                                        <div className="text-box">
+                                            <p>Certified company</p>
+                                        </div>
+                                    </div>
+                                    <div className="text-box-two">
+                                        <p>Lorem ipsum dolor sit ame sedme consectetur nod.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="about.html" className="thm-btn about-one__btn"> <i className="fa fa-arrow-right"></i> Discover more</a>
+                        </div>
+                    </div>
                 </div>
-                <div className='flex-1'>
-                  <div>
-                    <h6>Innovative work</h6>
-                  </div>
-                  <div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, blanditiis rem necessitatibus nemo sed unde adipisci eaque cupiditate porro maxime tempore optio, voluptas ea quas accusamus eligendi! Voluptatum, quis dolore!</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <Button color='error' startIcon={<Icon>arrow_forward</Icon>} variant="contained">FREE ESTIMATE</Button>
-              </div>
-          </div>
+            </div>
         </section>
 
 
@@ -407,7 +452,7 @@ export default function Home() {
                         <div className="flex-1 wow fadeInUp animated" data-wow-delay="100ms" style={{ visibility: "visible", animationDelay: "100ms", animationName: "fadeInUp"}}>
                             <div className="services-one__single">
                                 <div className="services-one__img">
-                                    <img src="assets/images/services/services-1-1.jpg" alt="" />
+                                    <img src="/images/services-1-1.jpg" alt="" />
                                 </div>
                                 <div className="services-one__content">
                                     <div className="services-one__icon">
@@ -424,7 +469,7 @@ export default function Home() {
                         <div className="flex-1 wow fadeInUp animated" data-wow-delay="200ms" style={{ visibility: "visible", animationDelay: "200ms", animationName: "fadeInUp"}}>
                             <div className="services-one__single">
                                 <div className="services-one__img">
-                                    <img src="assets/images/services/services-1-2.jpg" alt="" />
+                                    <img src="/images/services-1-2.jpg" alt="" />
                                 </div>
                                 <div className="services-one__content">
                                     <div className="services-one__icon">
@@ -441,7 +486,7 @@ export default function Home() {
                         <div className="flex-1 wow fadeInUp animated" data-wow-delay="300ms" style={{ visibility: "visible", animationDelay: "300ms", animationName: "fadeInUp"}}>
                             <div className="services-one__single">
                                 <div className="services-one__img">
-                                    <img src="assets/images/services/services-1-3.jpg" alt="" />
+                                    <img src="/images/services-1-3.jpg" alt="" />
                                 </div>
                                 <div className="services-one__content">
                                     <div className="services-one__icon">
