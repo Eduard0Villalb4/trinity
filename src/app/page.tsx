@@ -203,7 +203,7 @@ export default function Home() {
                 </IconButton>
                 <div>
                   <span>Call us anytime</span>
-                  <h4>+1 111 111 111</h4>
+                  <h4 className='text-white'>+1 111 111 111</h4>
                 </div>
               </div>
               <div className='w-[1px] h-[30px] bg-slate-400 mx-2' />
@@ -443,7 +443,7 @@ export default function Home() {
         </section>
 
 
-        <section className="why-choose-one">
+        <section className="!px-44 why-choose-one">
             <div className="why-choose-one-bg" style={{ backgroundImage: "url(/images//why-choose-one-bg.jpg)" }}></div>
             <div className="why-choose-one-shape-3 float-bob-y-2"></div>
             <div className="why-choose-one-shape-4 float-bob-x">
@@ -464,47 +464,51 @@ export default function Home() {
                             </div>
                             <p className="why-choose-one__text">Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute aboris nisi ut aliquip ex irure reprehederit.</p>
                             <div className="why-choose-one__points-box">
-                                <div className="row">
-                                    <div className="col-xl-6 col-lg-6 col-md-6">
-                                        <div className="why-choose-one__points-single">
-                                            <div className="why-choose-one__points-icon">
-                                                <span className="icon-roof-2"></span>
-                                            </div>
-                                            <div className="why-choose-one__points-title-box">
-                                                <h4 className="why-choose-one__points-title">Quality <br /> materials</h4>
-                                            </div>
+                                <div className="flex flex-col space-y-2">
+                                  <div className='flex-1 flex space-x-2'>
+                                    <div className="flex-1 col-lg-6 col-md-6">
+                                          <div className="why-choose-one__points-single">
+                                              <div className="why-choose-one__points-icon">
+                                                  <Icon>roofing</Icon>
+                                              </div>
+                                              <div className="why-choose-one__points-title-box">
+                                                  <h4 className="why-choose-one__points-title">Quality <br /> materials</h4>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div className="flex-1 col-lg-6 col-md-6">
+                                          <div className="why-choose-one__points-single">
+                                              <div className="why-choose-one__points-icon">
+                                                  <Icon>shield</Icon>
+                                              </div>
+                                              <div className="why-choose-one__points-title-box">
+                                                  <h4 className="why-choose-one__points-title">Fully <br /> insured</h4>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div className='flex-1 flex space-x-2'>
+                                    <div className="flex-1 col-lg-6 col-md-6">
+                                      <div className="why-choose-one__points-single">
+                                        <div className="why-choose-one__points-icon">
+                                          <Icon>workspace_premium</Icon>
                                         </div>
-                                    </div>
-                                    <div className="col-xl-6 col-lg-6 col-md-6">
-                                        <div className="why-choose-one__points-single">
-                                            <div className="why-choose-one__points-icon">
-                                                <span className="icon-shield"></span>
-                                            </div>
-                                            <div className="why-choose-one__points-title-box">
-                                                <h4 className="why-choose-one__points-title">Fully <br /> insured</h4>
-                                            </div>
+                                        <div className="why-choose-one__points-title-box">
+                                            <h4 className="why-choose-one__points-title">Mission <br /> statement</h4>
                                         </div>
+                                      </div>
                                     </div>
-                                    <div className="col-xl-6 col-lg-6 col-md-6">
-                                        <div className="why-choose-one__points-single">
-                                            <div className="why-choose-one__points-icon">
-                                                <span className="icon-mission"></span>
-                                            </div>
-                                            <div className="why-choose-one__points-title-box">
-                                                <h4 className="why-choose-one__points-title">Mission <br /> statement</h4>
-                                            </div>
-                                        </div>
+                                    <div className="flex-1 col-lg-6 col-md-6">
+                                      <div className="why-choose-one__points-single">
+                                          <div className="why-choose-one__points-icon">
+                                            <Icon>engineering</Icon>
+                                          </div>
+                                          <div className="why-choose-one__points-title-box">
+                                              <h4 className="why-choose-one__points-title">Expert <br /> engineers</h4>
+                                          </div>
+                                      </div>
                                     </div>
-                                    <div className="col-xl-6 col-lg-6 col-md-6">
-                                        <div className="why-choose-one__points-single">
-                                            <div className="why-choose-one__points-icon">
-                                                <span className="icon-construction-worker"></span>
-                                            </div>
-                                            <div className="why-choose-one__points-title-box">
-                                                <h4 className="why-choose-one__points-title">Expert <br /> engineers</h4>
-                                            </div>
-                                        </div>
-                                    </div>
+                                  </div>
                                 </div>
                             </div>
                         </div>
@@ -518,7 +522,7 @@ export default function Home() {
                                 <div className="why-choose-one__shape-1"></div>
                                 <div className="why-choose-one__shape-2"></div>
                                 <div className="why-choose-one__author-sign">
-                                    <p>Kevin Martin</p>
+                                    <p>Gabino Espinoza</p>
                                 </div>
                             </div>
                         </div>
@@ -763,7 +767,7 @@ export default function Home() {
                                             <i className="fas fa-phone-alt"></i>
                                         </div>
                                         <div className="text">
-                                            <p><a href="tel:9200368090">+1 111 111 111</a></p>
+                                          <p><a className='text-white' href="tel:9200368090">+1 111 111 111</a></p>
                                         </div>
                                     </li>
                                 </ul>
