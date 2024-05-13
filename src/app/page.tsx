@@ -82,27 +82,52 @@ export default function Home() {
 
   return (
     <main className="h-screen w-screen bg-[#151518]">
+      <div className="main-header__top">
+                <div className="main-header__top-inner">
+                    <div className="main-header__top-address">
+                        <ul className="list-unstyled main-header__top-address-list">
+                            <li>
+                                <i className="icon">
+                                    <span className="fa fa-clock"></span>
+                                </i>
+                                <div className="text">
+                                    <p>Mon to Sat: 09:00 am to 05:00 pm</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i className="icon">
+                                    <span className="fa fa-envelope"></span>
+                                </i>
+                                <div className="text">
+                                    <p><a href="mailto:trinity@company.com">trinity@company.com</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="main-header__top-right">
+                        <div className="main-header__top-menu-box">
+                            <ul className="list-unstyled main-header__top-menu">
+                                <li><a href="faq.html">Our Faqs</a></li>
+                                <li><a href="contact.html">Pricing</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div className="main-header__top-social-box">
+                            <div className="main-header__top-social">
+                                <a href="#"><i className="fab fa-facebook-square"></i></a>
+                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                <a href="#"><i className="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i className="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
       <AppBar color='transparent' position="static">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="#app-bar-with-responsive-menu"
-              sx={{
-                mr: 2,
-                display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.3rem',
-                color: 'inherit',
-                textDecoration: 'none',
-              }}
-            >
-              Trinity
-            </Typography>
+            <img className='w-28' src="/images/logo.png" alt="" />
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
               <IconButton
@@ -661,7 +686,7 @@ export default function Home() {
                                             <i className="fa fa-envelope"></i>
                                         </div>
                                         <div className="text">
-                                            <p><a href="mailto:needhelp@company.com ">trinity@company.com</a></p>
+                                            <p><a href="mailto:trinity@company.com ">trinity@company.com</a></p>
                                         </div>
                                     </li>
                                     <li>
