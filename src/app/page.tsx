@@ -220,51 +220,30 @@ export default function Home() {
             swipeable={true}
             showDots={false}
             ssr={true} // means to render carousel on server-side.
-            autoPlay={true}
-            autoPlaySpeed={1000}
+            autoPlay={false}
+            autoPlaySpeed={10}
             keyBoardControl={true}
             customTransition="all .5"
             transitionDuration={500}
           > 
               <div> 
-                  <img  src="/images/cover.jpg" alt="image1"/> 
-                  <div className='absolute top-0 h-full w-full flex items-center justify-center'>
-                    <div>
-                      <h2>Hello world</h2>
+                <img  src="/images/cover.jpg" alt="image1"/> 
+                <div className='absolute top-0 h-full w-full flex items-center justify-center'>
+                  <div className="container">
+                    <div className="flex">
+                      <div className="col-xl-7 col-lg-8">
+                          <div className="">
+                              <p className="section-sub-title">Commercial &amp; Residential</p>
+                              <h2 className="section-title__title">Reliable Roofing &amp; Fixing Services</h2>
+                              <p className="why-choose-one__text !text-white">We provide a variety of roofing and maintenance services for <br /> all type of house makes happy.</p>
+                              <div className="">
+                                <a href="about.html" className="thm-btn "> <i className="fa fa-arrow-right"></i> Discover more</a>
+                              </div>
+                          </div>
+                      </div>
                     </div>
-                  </div> 
-              </div> 
-              <div> 
-                  <img  src="/images/cover.jpg" alt="image2" /> 
-                  <div className='absolute top-0 h-full w-full flex items-center justify-center'>
-                    <div>
-                      <h2>Hello world</h2>
-                    </div>
-                  </div> 
-              </div> 
-              <div> 
-                  <img  src="/images/cover.jpg"alt="image3"/> 
-                  <div className='absolute top-0 h-full w-full flex items-center justify-center'>
-                    <div>
-                      <h2>Hello world</h2>
-                    </div>
-                  </div> 
-              </div> 
-              <div> 
-                  <img  src="/images/cover.jpg" alt="image4"/> 
-                  <div className='absolute top-0 h-full w-full flex items-center justify-center'>
-                    <div>
-                      <h2>Hello world</h2>
-                    </div>
-                  </div> 
-              </div> 
-              <div> 
-                  <img  src="/images/cover.jpg" alt="image5"/> 
-                  <div className='absolute top-0 h-full w-full flex items-center justify-center'>
-                    <div>
-                      <h2>Hello world</h2>
-                    </div>
-                  </div> 
+                  </div>
+                </div> 
               </div> 
           </Carousel> 
         </section>
@@ -336,7 +315,7 @@ export default function Home() {
             </div>
         </section>
 
-<section className="!px-44 about-one">
+        <section className="!px-44 about-one">
             <div className="about-one__shape float-bob-x">
                 <img src="/images/about-one-shape-dark.png" alt="" />
             </div>
