@@ -4,6 +4,7 @@ import "./globals.css";
 import "./styles.css";
 import "./layout.css";
 import "./responsive.css";
+import 'animate.css';
 import 'react-multi-carousel/lib/styles.css';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
