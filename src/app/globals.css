@@ -19,10 +19,29 @@
 body {
   color: #817e87;
   background: #151518;
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
+*:not(span) {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.sub-title {
+  @apply text-red-500 font-semibold text-lg;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title {
+  @apply text-white font-extrabold text-4xl;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+  @apply py-4 px-8 !important;
 }

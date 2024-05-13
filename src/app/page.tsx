@@ -14,8 +14,49 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image';
 import Icon from '@mui/material/Icon';
-import { Carousel } from 'react-responsive-carousel';
+import Carousel from 'react-multi-carousel';
 import { Card, CardActions, CardContent, CardMedia } from '@mui/material';
+
+
+const responsiveFirstCarousel = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 1
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
+
+const responsiveSecondCarousel = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 4
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 3
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 2
+  }
+};
 
 const pages = ['Home', 'About', 'Services', 'Works', 'Blog', 'Contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -148,7 +189,18 @@ export default function Home() {
       </AppBar>
       <div className='pb-80'>
         <section>
-          <Carousel showArrows={false} showThumbs={false} showStatus={false} showIndicators={false} autoPlay={true}> 
+          <Carousel 
+            responsive={responsiveFirstCarousel} 
+            infinite={true}
+            swipeable={true}
+            showDots={false}
+            ssr={true} // means to render carousel on server-side.
+            autoPlay={true}
+            autoPlaySpeed={1000}
+            keyBoardControl={true}
+            customTransition="all .5"
+            transitionDuration={500}
+          > 
               <div> 
                   <img  src="/images/cover.jpg" alt="image1"/> 
                   <div className='absolute top-0 h-full w-full flex items-center justify-center'>
@@ -208,8 +260,8 @@ export default function Home() {
           </div>
           <div className='flex-1 flex flex-col space-y-6'>
               <div>
-                <span>About roofside</span>
-                <h3>Experienced & quality roofing service providers</h3>
+                <h3 className='sub-title'>About roofside</h3>
+                <h2 className='title'>Experienced & quality roofing service providers</h2>
               </div>
               <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat praesentium nesciunt dolore explicabo delectus dolores ea vero, alias, sequi unde dolorum illo est enim officia repudiandae eos? Tenetur, optio.</p>
@@ -239,9 +291,9 @@ export default function Home() {
         </section>
         <section className='flex mt-12 flex-col px-44'>
           <div>
-            <h3>Our Services</h3>
+            <h3 className='sub-title'>Our Services</h3>
             <div className='flex space-x-5'>
-              <h2>We`re providing quality roofing services</h2>
+              <h2 className='tite'>We`re providing quality roofing services</h2>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat porro rem, sint animi a eos in repudiandae tempore obcaecati voluptatum qui id inventore sit, nihil dolorem, possimus laborum voluptate aut!</p>
             </div>
           </div>
@@ -249,7 +301,7 @@ export default function Home() {
             <Card sx={{ maxWidth: 345 }}>
               <CardMedia
                 sx={{ height: 140 }}
-                image="/static/images/cards/contemplative-reptile.jpg"
+                image="/images/residential-roofing-700x400.jpg"
                 title="green iguana"
               />
               <CardContent>
@@ -269,7 +321,7 @@ export default function Home() {
             <Card sx={{ maxWidth: 345 }}>
               <CardMedia
                 sx={{ height: 140 }}
-                image="/static/images/cards/contemplative-reptile.jpg"
+                image="/images/residential-roofing-700x400.jpg"
                 title="green iguana"
               />
               <CardContent>
@@ -289,7 +341,7 @@ export default function Home() {
             <Card sx={{ maxWidth: 345 }}>
               <CardMedia
                 sx={{ height: 140 }}
-                image="/static/images/cards/contemplative-reptile.jpg"
+                image="/images/residential-roofing-700x400.jpg"
                 title="green iguana"
               />
               <CardContent>
@@ -308,10 +360,10 @@ export default function Home() {
             </Card>
           </div>
         </section>
-        <section className='flex flex-col px-44 mt-12'>
-          <div className='flex-1'>
-            <h3>Why choose us</h3>
-            <h2>Few reasons to choose our company</h2>
+        <section className='flex px-44 mt-12'>
+          <div className='flex-1 w-full'>
+            <h3 className='sub-title'>Why choose us</h3>
+            <h2 className='title'>Few reasons to choose our company</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis dolor dicta fugiat iste consequatur voluptatem eos quas odio non perspiciatis eum ullam est pariatur, dolores optio. Sit temporibus dicta iure.</p>
             <div className="grid grid-cols-2 grid-rows-2 gap-4">
               <div className="bg-blue-500 text-white p-4">1</div>
@@ -320,8 +372,72 @@ export default function Home() {
               <div className="bg-yellow-500 text-white p-4">4</div>
             </div>
           </div>
-          <div className='flex-1 p-5'>
-            <div className='bg-slate-200 w-full h-full'></div>
+          <div className='flex-1 p-5 w-full'>
+            <div className='bg-slate-200 w-full h-full min-h-96'></div>
+          </div>
+        </section>
+
+        <section className='flex px-44 mt-12'>
+          <div className="overflow-x-auto whitespace-nowrap">
+            <div className="inline-block px-4 py-2">
+              <div className="w-64 h-auto bg-gray-200 inline-block mr-4 opacity-90">
+                <img  src="/images/embato.png" alt="image1"/> 
+              </div>
+              <div className="w-64 h-auto bg-gray-200 inline-block mr-4 opacity-90">
+                <img  src="/images/embato.png" alt="image1"/> 
+              </div>
+              <div className="w-64 h-auto bg-gray-200 inline-block mr-4 opacity-90">
+                <img  src="/images/embato.png" alt="image1"/> 
+              </div>
+              <div className="w-64 h-auto bg-gray-200 inline-block mr-4 opacity-90">
+                <img  src="/images/embato.png" alt="image1"/> 
+              </div>
+              <div className="w-64 h-auto bg-gray-200 inline-block mr-4 opacity-90">
+                <img  src="/images/embato.png" alt="image1"/> 
+              </div>
+              <div className="w-64 h-auto bg-gray-200 inline-block mr-4 opacity-90">
+                <img  src="/images/embato.png" alt="image1"/> 
+              </div>
+              <div className="w-64 h-auto bg-gray-200 inline-block mr-4 opacity-90">
+                <img  src="/images/embato.png" alt="image1"/> 
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className='flex flex-col px-44 mt-12'>
+          <div className='flex flex-col w-full'>
+            <div className='w-full text-center'>
+              <h3 className='sub-title'>Lastest projects</h3>
+              <h2 className='title'>Explore our latest projects <br /> for your inspiration</h2>
+            </div>
+          </div>
+          <div className='w-full h-72'>
+            <Carousel 
+              className='w-full h-full'
+              responsive={responsiveSecondCarousel} 
+              infinite={true}
+              swipeable={true}
+              ssr={true} // means to render carousel on server-side.
+              autoPlay={true}
+              autoPlaySpeed={1000}
+              keyBoardControl={true}
+              customTransition="all .5"
+              transitionDuration={500}
+            >
+              <div className='min-w-11 w-full p-2'>
+                <img src="/images/residential-roofing-700x400.jpg" alt="" />
+              </div>
+              <div className='min-w-11 w-full p-2'>
+                <img src="/images/residential-roofing-700x400.jpg" alt="" />
+              </div>
+              <div className='min-w-11 w-full p-2'>
+                <img src="/images/residential-roofing-700x400.jpg" alt="" />
+              </div>
+              <div className='min-w-11 w-full p-2'>
+                <img src="/images/residential-roofing-700x400.jpg" alt="" />
+              </div>
+            </Carousel>
           </div>
         </section>
       </div>
