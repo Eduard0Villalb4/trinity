@@ -791,8 +791,8 @@ export default function Home() {
             </div>
             <div className="container">
                 <div className="site-footer__top">
-                    <div className="row">
-                        <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp animated" data-wow-delay="100ms" style={{ visibility: "visible", animationDelay: "100ms", animationName: "fadeInUp"}}>
+                    <div className="flex space-x-6">
+                        <div className="flex-1 wow fadeInUp animated" data-wow-delay="100ms" style={{ visibility: "visible", animationDelay: "100ms", animationName: "fadeInUp"}}>
                             <div className="footer-widget__column footer-widget__about">
                                 <div className="footer-widget__about-text-box">
                                     <p className="footer-widget__about-text">Roofsie with more than two years of proven success in quality roofing services.</p>
@@ -824,7 +824,7 @@ export default function Home() {
                                 <form className="footer-widget__newsletter-form">
                                     <div className="footer-widget__newsletter-input-box">
                                         <input type="email" placeholder="Enter Email Address" name="email" />
-                                        <Button color='error' startIcon={<Icon>arrow_forward</Icon>} variant="contained">Subscribe</Button>
+                                        <Button className='!mt-4' color='error' startIcon={<Icon>arrow_forward</Icon>} variant="contained">Subscribe</Button>
                                     </div>
                                 </form>
                             </div>
