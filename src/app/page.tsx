@@ -237,7 +237,7 @@ export default function Home() {
                               <h2 className="section-title__title">Reliable Roofing &amp; Fixing Services</h2>
                               <p className="why-choose-one__text !text-white">We provide a variety of roofing and maintenance services for <br /> all type of house makes happy.</p>
                               <div className="">
-                                <a href="about.html" className="thm-btn "> <i className="fa fa-arrow-right"></i> Discover more</a>
+                                <Button color='error' startIcon={<Icon>arrow_forward</Icon>} variant="contained">FREE ESTIMATE</Button>
                               </div>
                           </div>
                       </div>
@@ -388,7 +388,7 @@ export default function Home() {
                                     </div>
                                 </li>
                             </ul>
-                            <a href="about.html" className="thm-btn about-one__btn"> <i className="fa fa-arrow-right"></i> Discover more</a>
+                            <Button color='error' startIcon={<Icon>arrow_forward</Icon>} variant="contained">FREE ESTIMATE</Button>
                         </div>
                     </div>
                 </div>
